@@ -40,9 +40,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'fatih/vim-go'
+Plugin 'scrooloose/nerdtree'
 "Bundle 'Blackrush/vim-gocode'
 "Plugin 'nsf/gocode', {'rtp': 'vim/'}
 " Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
-
+ " NERDTree config
+ map <F2> :NERDTreeToggle<CR>
+ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeType == "primary") | q | endif
