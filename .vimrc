@@ -25,6 +25,11 @@ set t_Co=256
 colorscheme molokai
 let g:molokai_original = 1
 let g:rehash256 = 1
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_extra_types = 1
 
 syntax on
 set fencs=utf-8,gbk
